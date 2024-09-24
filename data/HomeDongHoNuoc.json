@@ -1,0 +1,50 @@
+{
+    "labels": [
+        "Tháng 1",
+        "Tháng 2",
+        "Tháng 3",
+        "Tháng 4",
+        "Tháng 5",
+        "Tháng 6",
+        "Tháng 7",
+        "Tháng 8",
+        "Tháng 9",
+        "Tháng 10",
+        "Tháng 11",
+        "Tháng 12"
+    ],
+    "datasets": [
+        {
+            "label": "Khách hàng mở nước",
+            "backgroundColor": "#047d10",
+            "borderColor": "#047d10",
+            "lineTension": 0,
+            "fill": false,
+            "data": []
+        },
+        {
+            "label": "Khách hàng ngưng nước",
+            "backgroundColor": "#d90202",
+            "borderColor": "#d90202",
+            "lineTension": 0,
+            "fill": false,
+            "data": []
+        },
+        {
+            "label": "Khách hàng mới",
+            "backgroundColor": "#3402d9",
+            "borderColor": "#3402d9",
+            "lineTension": 0,
+            "fill": false,
+            "data": []
+        },
+        {
+            "label": "Khách hàng thay đồng hồ",
+            "backgroundColor": "#768c04",
+            "borderColor": "#768c04",
+            "lineTension": 0,
+            "fill": false,
+            "data": []
+        }
+    ]
+}

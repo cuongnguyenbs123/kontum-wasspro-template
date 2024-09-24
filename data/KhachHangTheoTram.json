@@ -1,0 +1,22 @@
+{
+    "labels": [
+        "KTM"
+    ],
+    "datasets": [
+        {
+            "label": "Thanh toán tiền mặt",
+            "backgroundColor": "#0B21E3",
+            "data": []
+        },
+        {
+            "label": "Thanh toán chuyển khoản",
+            "backgroundColor": "#06C76A",
+            "data": []
+        },
+        {
+            "label": "Thanh toán thu hộ",
+            "backgroundColor": "#F2D916",
+            "data": []
+        }
+    ]
+}

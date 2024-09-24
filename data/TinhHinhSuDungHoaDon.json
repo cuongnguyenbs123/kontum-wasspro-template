@@ -1,0 +1,61 @@
+{
+    "labels": [
+        "Tháng 1",
+        "Tháng 2",
+        "Tháng 3",
+        "Tháng 4",
+        "Tháng 5",
+        "Tháng 6",
+        "Tháng 7",
+        "Tháng 8",
+        "Tháng 9",
+        "Tháng 10",
+        "Tháng 11",
+        "Tháng 12"
+    ],
+    "datasets": [
+        {
+            "label": "Số lượng sử dụng",
+            "backgroundColor": "#001E6C",
+            "borderColor": "#001E6C",
+            "type": "line",
+            "lineTension": 0,
+            "fill": false,
+            "data": [
+                763,
+                770,
+                799,
+                797,
+                829,
+                827,
+                773,
+                792,
+                794,
+                800,
+                791,
+                797
+            ]
+        },
+        {
+            "label": "Tổng số khách hàng",
+            "backgroundColor": "#e36922",
+            "borderColor": "#e36922",
+            "lineTension": 0,
+            "fill": false,
+            "data": [
+                763,
+                770,
+                799,
+                797,
+                829,
+                827,
+                773,
+                792,
+                794,
+                800,
+                791,
+                797
+            ]
+        }
+    ]
+}

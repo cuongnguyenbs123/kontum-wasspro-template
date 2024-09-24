@@ -1,0 +1,23 @@
+{
+    "labels": [],
+    "datasets": [
+        {
+            "label": "Số lượng đã thu",
+            "backgroundColor": "#3F85F8",
+            "borderColor": "#3F85F8",
+            "lineTension": 0,
+            "fill": false,
+            "ids": [],
+            "data": []
+        },
+        {
+            "label": "Số lượng chưa thu",
+            "backgroundColor": "#E84232",
+            "borderColor": "#E84232",
+            "lineTension": 0,
+            "fill": false,
+            "ids": [],
+            "data": []
+        }
+    ]
+}

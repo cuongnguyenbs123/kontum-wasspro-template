@@ -1,0 +1,39 @@
+{
+    "labels": [
+        "Tháng 1",
+        "Tháng 2",
+        "Tháng 3",
+        "Tháng 4",
+        "Tháng 5",
+        "Tháng 6",
+        "Tháng 7",
+        "Tháng 8",
+        "Tháng 9",
+        "Tháng 10",
+        "Tháng 11",
+        "Tháng 12"
+    ],
+    "datasets": [
+        {
+            "label": "KTM",
+            "borderColor": "rgb(10, 223, 40)",
+            "backgroundColor": "rgb(10, 223, 40)",
+            "fill": false,
+            "lineTension": false,
+            "data": [
+                16596,
+                19943,
+                20752,
+                21768,
+                28085,
+                22523,
+                21034,
+                20679,
+                20098,
+                19376,
+                18307,
+                20483
+            ]
+        }
+    ]
+}

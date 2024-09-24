@@ -1,0 +1,30 @@
+{
+    "labels": [
+        "Dân - Sinh hoạt",
+        "Hành chính sự nghiệp",
+        "Doanh nghiệp sản xuất",
+        "Trường học\r\n",
+        "Hộ kinh doanh\r\n",
+        "Doanh nghiệp kinh doanh (Theo thỏa thuận)\r\n"
+    ],
+    "datasets": [
+        {
+            "backgroundColor": [
+                "rgb(58, 13, 184)",
+                "rgb(22, 69, 22)",
+                "rgb(33, 108, 141)",
+                "rgb(18, 82, 199)",
+                "rgb(52, 98, 57)",
+                "rgb(96, 222, 133)"
+            ],
+            "data": [
+                4301,
+                170,
+                7,
+                81,
+                960,
+                72
+            ]
+        }
+    ]
+}
