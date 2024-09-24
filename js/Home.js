@@ -1,3 +1,27 @@
+var DoanhThu = '../data/DoanhThu.json';
+var GetTiLeTheoDonGia = '../data/GetTiLeTheoDonGia.json';
+var HomeDongHoNuoc = '../data/HomeDongHoNuoc.json';
+var KhachHangTheoDoiTuong = '../data/KhachHangTheoDoiTuong.json';
+var KhachHangTheoTram = '../data/KhachHangTheoTram.json';
+var TinhHinhSuDungHoaDon = '../data/TinhHinhSuDungHoaDon.json';
+var TinhHinhThuCuaNhanVien = '../data/TinhHinhThuCuaNhanVien.json';
+var LuongNuocTieuThu = '../data/LuongNuocTieuThu.json';
+
+async function getData(url) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const json = await response.json();
+      return json;
+    } catch (error) {
+      console.error(error.message);
+      return 'error';
+    }
+  }
+
 jQuery(document).ready(function () {
 
     jQuery("select[name='Nam']").select2({ "width": "100%" });
@@ -42,7 +66,8 @@ jQuery(document).ready(function () {
             }
         }
     });
-    VNPT.Common.Post(LuongNuocTieuThu, JSON.stringify(jQuery("#form-chart-1").serializeObject()), function (result) {
+    // VNPT.Common.Post(LuongNuocTieuThu, JSON.stringify(jQuery("#form-chart-1").serializeObject()), function (result) {
+        getData (LuongNuocTieuThu).then(function (result) {
         var ctx_1 = document.getElementById('chart-1').getContext('2d');
         window.chart_1 = new Chart(ctx_1, {
             type: 'line',
@@ -107,7 +132,8 @@ jQuery(document).ready(function () {
         });
     });
     // doanh thu
-    VNPT.Common.Post(DoanhThu, JSON.stringify(jQuery("#form-chart-2").serializeObject()), function (result) {
+    // VNPT.Common.Post(DoanhThu, JSON.stringify(jQuery("#form-chart-2").serializeObject()), function (result) {
+        getData(DoanhThu).then(function (result) {
         var ctx_2 = document.getElementById('chart-2').getContext('2d');
         window.chart_2 = new Chart(ctx_2, {
             type: 'bar',
@@ -166,7 +192,8 @@ jQuery(document).ready(function () {
         });
     });
     // doi tuong
-    VNPT.Common.Post(KhachHangTheoDoiTuong, JSON.stringify(jQuery("#form-chart-3").serializeObject()), function (result) {
+    // VNPT.Common.Post(KhachHangTheoDoiTuong, JSON.stringify(jQuery("#form-chart-3").serializeObject()), function (result) {
+        getData (KhachHangTheoDoiTuong).then(function (result) {
         var ctx_chart_3= document.getElementById('chart-3').getContext('2d');
         window.chart_3 = new Chart(ctx_chart_3, {
             type: 'pie',
@@ -244,7 +271,8 @@ jQuery(document).ready(function () {
         });
     });
     // phan bo khach hang theo tram
-    VNPT.Common.Post(KhachHangTheoTram, JSON.stringify(jQuery("#form-chart-4").serializeObject()), function (result) {
+    // VNPT.Common.Post(KhachHangTheoTram, JSON.stringify(jQuery("#form-chart-4").serializeObject()), function (result) {
+        getData (KhachHangTheoTram).then(function (result) {
         var ctx_chart_4 = document.getElementById('chart-4').getContext('2d');
         window.chart_4 = new Chart(ctx_chart_4, {
             type: 'bar',
@@ -299,7 +327,8 @@ jQuery(document).ready(function () {
         });
     });
     // tinh hinh su dung hoa don theo thang
-    VNPT.Common.Post(TinhHinhSuDungHoaDon, JSON.stringify(jQuery("#form-chart-6").serializeObject()), function (result) {
+    // VNPT.Common.Post(TinhHinhSuDungHoaDon, JSON.stringify(jQuery("#form-chart-6").serializeObject()), function (result) {
+        getData (TinhHinhSuDungHoaDon).then(function (result) {
         var ctx_chart_6 = document.getElementById('chart-6').getContext('2d');
         window.chart_6 = new Chart(ctx_chart_6, {
             type: 'bar',
@@ -355,7 +384,8 @@ jQuery(document).ready(function () {
         });
     });
     // dong ho nuoc
-    VNPT.Common.Post(HomeDongHoNuoc, JSON.stringify(jQuery("#form-chart-5").serializeObject()), function (result) {
+    // VNPT.Common.Post(HomeDongHoNuoc, JSON.stringify(jQuery("#form-chart-5").serializeObject()), function (result) {
+        getData (HomeDongHoNuoc).then(function (result) {
         var ctx_5 = document.getElementById('chart-5').getContext('2d');
         window.chart_5 = new Chart(ctx_5, {
             type: 'line',
@@ -419,7 +449,8 @@ jQuery(document).ready(function () {
         });
     });
     // ti le thu cua nhan vien
-    VNPT.Common.Post(GetTiLeTheoDonGia, JSON.stringify(jQuery("#form-chart-7").serializeObject()), function (result) {
+    // VNPT.Common.Post(GetTiLeTheoDonGia, JSON.stringify(jQuery("#form-chart-7").serializeObject()), function (result) {
+        getData (GetTiLeTheoDonGia).then(function (result) {
         var ctx_chart_7= document.getElementById('chart-7').getContext('2d');
         window.chart_7 = new Chart(ctx_chart_7, {
             type: 'doughnut',
@@ -497,7 +528,8 @@ jQuery(document).ready(function () {
         });
     });
     // tinh hinh thu theo thang
-    VNPT.Common.Post(TinhHinhThuCuaNhanVien, JSON.stringify(jQuery("#form-chart-8").serializeObject()), function (result) {
+    // VNPT.Common.Post(TinhHinhThuCuaNhanVien, JSON.stringify(jQuery("#form-chart-8").serializeObject()), function (result) {
+        getData (TinhHinhThuCuaNhanVien).then(function (result) {
         var ctx_chart_8 = document.getElementById('chart-8').getContext('2d');
         window.chart_8 = new Chart(ctx_chart_8, {
             type: 'horizontalBar',

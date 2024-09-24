@@ -14,20 +14,20 @@
 <link href="/style/bootstrap-editable.css" rel="stylesheet"/>
 <link href="/style/nestable.css" rel="stylesheet"/>
 <link href="/style/animate.css" rel="stylesheet"/>
-<link href="/style/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
-<link href="/style/Ionicons/css/ionicons.min.css" rel="stylesheet"/>
-<link href="/style/select2/dist/css/select2.min.css" rel="stylesheet"/>
-<link href="/style/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"/>
+<link href="/style/dataTables.bootstrap.min.css" rel="stylesheet"/>
+<link href="/style/ionicons.min.css" rel="stylesheet"/>
+<link href="/style/select2.min.css" rel="stylesheet"/>
+<link href="/style/daterangepicker.css" rel="stylesheet"/>
 <link href="/style/duallistbox/dist/bootstrap-duallistbox.min.css" rel="stylesheet"/>
 <link href="/style/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
 <link href="/style/loading.css" rel="stylesheet"/>
 <link href="/style/AdminLTE.min.css" rel="stylesheet"/>
 <link href="/style/_all-skins.min.css" rel="stylesheet"/>
 
-    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/js/modernizr-2.6.2.js"></script>
 
     
-    <link href="/Content/site.css?v=20240924050335" rel="stylesheet"/>
+    <link href="/style/site.css" rel="stylesheet"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,19 +80,18 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="/Images/no-avatar.jpg" class="user-image" alt="User Image">
+                                <img src="/image/no-avatar.jpg" class="user-image" alt="User Image">
                                 <span class="hidden-xs">L&#234; Thị Tuyết Hạnh</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="/Images/no-avatar.jpg" class="img-circle">
+                                    <img src="/image/no-avatar.jpg" class="img-circle">
                                     <p>
                                         L&#234; Thị Tuyết Hạnh - Quản trị hệ thống
                                         <small>Hoạt động từ 14/06/2022</small>
                                     </p>
                                 </li>
-
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -345,16 +344,7 @@
 
 <script src="/Plugins/morris/morris.min.js"></script> -->
 
-<script>
-    var LuongNuocTieuThu = "http://kontum.wasspro.vn/Home/LuongNuocTieuThu";
-    var DoanhThu = "http://kontum.wasspro.vn/Home/DoanhThu";
-    var KhachHangTheoDoiTuong = "http://kontum.wasspro.vn/Home/KhachHangTheoDoiTuong";
-    var KhachHangTheoTram = "http://kontum.wasspro.vn/Home/KhachHangTheoTram";
-    var HomeDongHoNuoc = "http://kontum.wasspro.vn/Home/HomeDongHoNuoc";
-    var TinhHinhSuDungHoaDon = "http://kontum.wasspro.vn/Home/TinhHinhSuDungHoaDon";
-    var GetTiLeTheoDonGia = "http://kontum.wasspro.vn/Home/GetTiLeTheoDonGia";
-    var TinhHinhThuCuaNhanVien = "http://kontum.wasspro.vn/Home/TinhHinhThuCuaNhanVien";
-</script>
+
 <div class="row">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
@@ -501,7 +491,7 @@
             </div>
             <div class="box-body">
                 <div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                    <canvas id="chart-1" style="height: 400px; display: block; width: 1246px;" width="1246" height="400" class="chartjs-render-monitor"></canvas>
+                    <canvas id="chart-2" style="height: 578px; display: block; width: 1803px;" width="1803" height="578" class="chartjs-render-monitor"></canvas>
                 </div>
 
                 <div id="modal-chart-2" class="modal fade" role="dialog">
@@ -510,44 +500,44 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title"><i class="fa fa-cogs"></i> Settings</h4>
                             </div>
                             <div class="modal-body">
-                                <form class="form-horizontal" id="form-chart-2">
+                                <form class="form-horizontal" id="form-chart-2" novalidate="novalidate">
                                     <div class="form-group">
                                         <label class="control-label col-sm-3">Loại</label>
                                         <div class="col-sm-9">
-                                            <select class="form-control" name="Loai">
-                                                <option value="1" selected>Theo Tháng</option>
+                                            <select class="form-control select2-hidden-accessible" name="Loai" tabindex="-1" aria-hidden="true">
+                                                <option value="1" selected="">Theo Tháng</option>
                                                 <option value="2">Theo Quý</option>
                                                 <option value="3">Theo Năm</option>
-                                            </select>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Loai-c7-container"><span class="select2-selection__rendered" id="select2-Loai-c7-container" title="Theo Tháng">Theo Tháng</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-3">Thời gian</label>
                                         <div class="col-sm-9">
-                                            <select class="form-control" id="Nam" name="Nam"></select>
+                                            <select class="form-control select2-hidden-accessible" id="Nam" name="Nam" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Nam-container"><span class="select2-selection__rendered" id="select2-Nam-container"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-3">Hiển thị</label>
                                         <div class="col-sm-9">
-                                            <select class="form-control" name="Display">
-                                                <option value="1" selected>Doanh thu</option>
+                                            <select class="form-control select2-hidden-accessible" name="Display" tabindex="-1" aria-hidden="true">
+                                                <option value="1" selected="">Doanh thu</option>
                                                 <option value="2">Tiền thuế</option>
                                                 <option value="3">Phí BVMT</option>
                                                 <option value="4">Tổng tiền</option>
-                                            </select>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Display-jf-container"><span class="select2-selection__rendered" id="select2-Display-jf-container" title="Doanh thu">Doanh thu</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label col-sm-3"> Chi Nhánh/Trạm</label>
                                         <div class="col-sm-9">
-                                            <select class="form-control" id="KhachHangFilter" name="KhachHangFilter"><option value="">Tất cả</option>
+                                            <select class="form-control select2-hidden-accessible" id="KhachHangFilter" name="KhachHangFilter" tabindex="-1" aria-hidden="true"><option value="">Tất cả</option>
 <option value="2">Kon Tum</option>
-</select>
+</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-KhachHangFilter-container"><span class="select2-selection__rendered" id="select2-KhachHangFilter-container" title="Tất cả">Tất cả</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                         </div>
                                     </div>
                                 </form>
@@ -1064,13 +1054,13 @@
 <script src="/js/dataTables.bootstrap.min.js"></script>
 <script src="/js/moment.min.js"></script>
 <script src="/js/select2.min.js"></script>
-<script src="/admin-lte/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/js/daterangepicker.js"></script>
 <script src="/js/bootstrap-datetimepicker.min.js"></script>
 <script src="/js/jquery.bootstrap-duallistbox.min.js"></script>
 <script src="/js/jquery.nestable.js"></script>
 <script src="/js/jquery.number.min.js"></script>
 <script src="/js/jquery.serialize-object.js"></script>
-<script src="/js/upload/jquery.dm-uploader.js"></script>
+<script src="/js/jquery.dm-uploader.js"></script>
 <script src="/js/bootstrap-notify.min.js"></script>
 <script src="/js/jquery.typewatch.js"></script>
 <script src="/js/bootbox.js"></script>
